@@ -1,0 +1,34 @@
+{
+  "name": "birthday_reminder",
+  "version": "1.0.0",
+  "description": "### Requirements - [pip](https://pip.pypa.io/en/stable/) - [python virtual env](https://packaging.python.org/installing/#creating-and-using-virtual-environments)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jz-wang/Patients-Birthday-Reminder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jz-wang/Patients-Birthday-Reminder/issues"
+  },
+  "homepage": "https://github.com/jz-wang/Patients-Birthday-Reminder#readme",
+  "dependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "webpack": "^1.14.0"
+  },
+  "engines": {
+  "node": "6.2.1",
+  "npm": "3.9.3"
+  }
+}

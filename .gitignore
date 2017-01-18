@@ -1,0 +1,12 @@
+# bundler config.
+/.bundle
+
+# logfiles and tempfiles.
+/log/*
+!/log/.keep
+/tmp
+
+# webpack and node modules
+node_modules/
+bundle.js
+bundle.js.map

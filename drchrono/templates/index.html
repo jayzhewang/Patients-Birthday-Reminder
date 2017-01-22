@@ -1,13 +1,10 @@
+{% load render_bundle from webpack_loader %}
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel='stylesheet' type='text/css' href='assets/stylesheets/application.css'/>
-    <script type='text/javascript' src='assets/javascripts/bundle.js'></script>
   </head>
   <body>
-    <!-- <a href="{% url 'social:begin' 'drchrono' %}">
-      drchrono OAuth
-    </a> -->
     <div id='root'></div>
+    {% render_bundle 'main' %}
   </body>
 </html>

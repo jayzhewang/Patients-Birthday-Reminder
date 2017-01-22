@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const BundleTracker = require('webpack-bundle-tracker');
 
 module.exports = {
   // devtool: 'cheap-module-source-map',
@@ -7,7 +8,7 @@ module.exports = {
   context: __dirname,
   entry: './frontend/drchrono.jsx',
   output: {
-    path: path.join(__dirname, 'assets', 'javascripts'),
+    path: path.join(__dirname, 'assets', 'bundles'),
     filename: 'bundle.js'
   },
   resolve: {
@@ -28,12 +29,18 @@ module.exports = {
         loader: 'node-loader'
       }
     ]
-  }
-  // plugins: [
-  //   new webpack.DefinePlugin({
-  //     'process.env': {
-  //       'NODE_ENV': JSON.stringify('production')
-  //     }
-  //   })
-  // ]
+  },
+  plugins: [
+    new BundleTracker({filename: './webpack-stats.json'})
+    // new webpack.ProvidePlugin({
+    //         $: 'jquery',
+    //         jQuery: 'jquery',
+    //         'window.jQuery': 'jquery'
+    //     }),
+    // new webpack.DefinePlugin({
+    //   'process.env': {
+    //     'NODE_ENV': JSON.stringify('production')
+    //   }
+    // })
+  ]
 };

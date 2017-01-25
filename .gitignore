@@ -13,3 +13,6 @@ bundle.js.map
 
 # static cdn files
 static_cdn/
+
+# environment
+env.js

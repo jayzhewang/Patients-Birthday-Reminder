@@ -1,11 +1,13 @@
 import React from 'react';
 import { createStore } from 'redux';
+import RootMiddleware from '../middlewares/root_middleware';
+import RootReducer from '../reducers/root_reducer';
 
 const configureStore = (preloadedState = {}) => {
   return createStore(
-    null,
+    RootReducer,
     preloadedState,
-    null
+    RootMiddleware
   );
 };
 

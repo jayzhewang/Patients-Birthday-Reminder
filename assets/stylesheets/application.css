@@ -1,6 +1,7 @@
 @import './bootstrap.min.css';
 @import './navbar.css';
 @import './footer.css';
+@import './welcome.css';
 
 html, body, header, footer, section, article, div, span,
 strong, a, img, p, h1, h2, h3, time, ul, li, small,

@@ -8,9 +8,9 @@ const Navbar = () => (
     <div className='links'>
       <ul id='links'>
         <li>About</li>
-        <li>drchrono</li>
+        <li><a id='a' href='https://www.drchrono.com/'>drchrono</a></li>
         <div className='signup-button'>
-          <div><a href='https://www.drchrono.com/sign-up/'>Sign Up for Free</a></div>
+          <div><a id='a' href='https://www.drchrono.com/sign-up/'>Sign Up for Free</a></div>
         </div>
       </ul>
     </div>

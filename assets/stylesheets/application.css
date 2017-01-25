@@ -1,3 +1,6 @@
+@import './bootstrap.min.css';
+@import './navbar.css';
+
 html, body, header, footer, section, article, div, span,
 strong, a, img, p, h1, h2, h3, time, ul, li, small,
 form, label, input, textarea, button {
@@ -12,6 +15,7 @@ form, label, input, textarea, button {
   vertical-align: inherit;
   color: inherit;
   background: transparent;
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 input:focus,
@@ -25,7 +29,12 @@ button:focus {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
-h1 {
-  font-weight: bold;
-  background-color: red;
+.app {
+  font-family: sans-serif;
+}
+
+#links > li:hover,
+.signup-button,
+.logo {
+  cursor: pointer;
 }

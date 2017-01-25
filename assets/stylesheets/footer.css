@@ -1,0 +1,42 @@
+.footer {
+  background: #31404e;
+  min-height: 100px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.footer > div {
+  width: 33vw;
+}
+
+.footer > div:last-child {
+  width: 24vw;
+}
+
+.footer-logo > img {
+  width: auto;
+  height: 35px;
+}
+
+.about-links {
+  margin-left: 10vw;
+}
+
+#about-links > li {
+  list-style: none;
+  color: #cccccc;
+  margin-top: 10px;
+}
+
+#about-links > li > a:hover {
+  color: #cccccc;
+}
+
+#about-links > li > a {
+  text-decoration: none;
+}

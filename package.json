@@ -4,7 +4,7 @@
   "description": "### Requirements - [pip](https://pip.pypa.io/en/stable/) - [python virtual env](https://packaging.python.org/installing/#creating-and-using-virtual-environments)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "./node_modules/.bin/webpack"
   },
   "repository": {
     "type": "git",

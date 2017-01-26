@@ -36,8 +36,9 @@ button:focus {
 }
 
 #links > li:hover,
-.signup-button,
-.logo {
+.signup-button:hover,
+.logo:hover,
+.login-button:hover {
   cursor: pointer;
 }
 

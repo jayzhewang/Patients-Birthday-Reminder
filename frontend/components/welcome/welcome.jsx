@@ -12,7 +12,7 @@ const Welcome = () => (
       </div>
       <div>
         <div className='login-button'>
-          <a href={`https://drchrono.com/o/authorize/?redirect_uri=${encodeURIComponent(process.env.REDIRECT_URI)}&response_type=code&client_id=${process.env.CLIENT_ID}&scope=${encodeURIComponent(process.env.SCOPES)}`}>Login with drchrono</a>
+          <a href={`https://drchrono.com/o/authorize/?redirect_uri=${encodeURIComponent(process.env['REDIRECT_URI'])}&response_type=code&client_id=${process.env['CLIENT_ID']}&scope=${encodeURIComponent(process.env['SCOPES'])}`}>Login with drchrono</a>
         </div>
       </div>
       <div>

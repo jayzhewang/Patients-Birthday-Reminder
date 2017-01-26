@@ -13,7 +13,7 @@
   margin: 100px 0;
 }
 
-.login-text {
+.login > div {
   display: block;
   margin: auto;
   width: 600px;
@@ -37,16 +37,19 @@
   border: 1px solid #38b49d;
   border-radius: 3px;
   color: #ffffff;
+  transition: background 0.15s ease;
 }
 
 .login-button:hover {
   background: #18bb98;
   border: 1px solid #18bb98;
+  transition: background 0.15s ease;
 }
 
 .login-button:active {
   background: #449d44;
   border: 1px solid #255625;
+  transition: background 0.15s ease;
 }
 
 .login-button > a {
@@ -55,6 +58,14 @@
 
 .login-button > a:hover {
   color: #ffffff;
+}
+
+.footnote {
+  font-size: 0.6em;
+  font-weight: lighter;
+  width: 480px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .artwork > img {

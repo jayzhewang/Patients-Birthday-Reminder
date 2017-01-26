@@ -4,8 +4,7 @@ const BundleTracker = require('webpack-bundle-tracker');
 const Dotenv = require('dotenv-webpack');
 
 module.exports = {
-  // devtool: 'cheap-module-source-map',
-  devtool: 'source-map',
+  devtool: 'cheap-module-source-map',
   context: __dirname,
   entry: './frontend/drchrono.jsx',
   output: {
@@ -33,16 +32,16 @@ module.exports = {
   },
   plugins: [
     new BundleTracker({filename: './webpack-stats.json'}),
-    new Dotenv({path: '.env'})
+    new Dotenv({path: '.env'}),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    })
     // new webpack.ProvidePlugin({
     //         $: 'jquery',
     //         jQuery: 'jquery',
     //         'window.jQuery': 'jquery'
     //     }),
-    // new webpack.DefinePlugin({
-    //   'process.env': {
-    //     'NODE_ENV': JSON.stringify('production')
-    //   }
-    // })
   ]
 };

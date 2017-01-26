@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const BundleTracker = require('webpack-bundle-tracker');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   // devtool: 'cheap-module-source-map',
@@ -31,7 +32,8 @@ module.exports = {
     ]
   },
   plugins: [
-    new BundleTracker({filename: './webpack-stats.json'})
+    new BundleTracker({filename: './webpack-stats.json'}),
+    new Dotenv({path: '.env'})
     // new webpack.ProvidePlugin({
     //         $: 'jquery',
     //         jQuery: 'jquery',

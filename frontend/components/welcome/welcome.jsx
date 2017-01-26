@@ -1,5 +1,4 @@
 import React from 'react';
-import dc from '../../../env';
 
 const Welcome = () => (
   <div className='welcome'>
@@ -13,7 +12,7 @@ const Welcome = () => (
       </div>
       <div>
         <div className='login-button'>
-          <a href={`https://drchrono.com/o/authorize/?redirect_uri=${encodeURIComponent(dc.REDIRECT_URI)}&response_type=code&client_id=${dc.CLIENT_ID}&scope=${encodeURIComponent(dc.SCOPES)}`}>Login with drchrono</a>
+          <a href={`https://drchrono.com/o/authorize/?redirect_uri=${encodeURIComponent(process.env.REDIRECT_URI)}&response_type=code&client_id=${process.env.CLIENT_ID}&scope=${encodeURIComponent(process.env.SCOPES)}`}>Login with drchrono</a>
         </div>
       </div>
       <div>

@@ -15,4 +15,4 @@ bundle.js.map
 static_cdn/
 
 # environment
-env.js
+.env

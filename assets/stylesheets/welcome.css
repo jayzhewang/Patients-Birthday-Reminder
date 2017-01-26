@@ -5,10 +5,12 @@
   font-weight: 400;
   color: #555555;
   font-weight: 300;
+  margin-top: 150px;
+  display: block;
 }
 
 .login {
-  margin: 50px 0;
+  margin: 100px 0;
 }
 
 .login-text {
@@ -29,6 +31,7 @@
   margin: 100px auto;
   border: 1px solid red;
   width: 250px;
+  min-width: 250px;
   height: 50px;
   background: #38b49d;
   border: 1px solid #38b49d;

@@ -1,7 +1,7 @@
 .nav-bar {
   background: #ffffff;
+  width: 100vw;
   min-height: 100px;
-  padding: 0 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,6 +9,16 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.2em;
   font-weight: 400;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 50px;
 }
 
 .logo > img {
@@ -40,6 +50,7 @@
   border: 1px solid #fc8041;
   border-radius: 3px;
   width: 163px;
+  min-width: 163px;
   height: 36px;
   background: #fc7835;
   color: #ffffff;

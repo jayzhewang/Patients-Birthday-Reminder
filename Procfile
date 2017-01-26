@@ -1,1 +1,1 @@
-web: gunicorn drchrono.wsgi:application --log-file -
+web: gunicorn drchrono.wsgi --log-file -

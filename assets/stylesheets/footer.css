@@ -1,7 +1,7 @@
 .footer {
   background: #31404e;
   min-height: 100px;
-  padding: 50px;
+  padding: 50px 70px;
   display: flex;
   justify-content: space-between;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -12,14 +12,22 @@
 
 .footer > div {
   width: 33vw;
-  display: flex;
-  justify-content: center;
-  border: 1px solid red;
 }
 
 .footer-logo > img {
   width: auto;
   height: 35px;
+  margin-bottom: 30px;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+}
+
+.about-links > div {
+  display: block;
+  padding-left: 16vw;
 }
 
 #about-links > li {
@@ -34,4 +42,9 @@
 
 #about-links > li > a {
   text-decoration: none;
+}
+
+#copyright {
+  font-size: 0.8em;
+  font-weight: lighter;
 }

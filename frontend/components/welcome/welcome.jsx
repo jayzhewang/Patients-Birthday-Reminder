@@ -17,7 +17,7 @@ const Welcome = () => (
         </div>
       </div>
       <div>
-        <div className='footnote'>
+        <div id='footnote'>
           <p>
             Logins required. Sign up for free. drreminder requires patient's basic information (e.g. name, birthday) in order to send out birthday emails.
           </p>

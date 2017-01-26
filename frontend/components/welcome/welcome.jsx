@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Welcome = () => {
-  window.console.log(process.env);
+  window.console.log(process.env.REDIRECT_URI);
   return(
     <div className='welcome'>
       <div className='login'>

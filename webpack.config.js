@@ -32,7 +32,10 @@ module.exports = {
   },
   plugins: [
     new BundleTracker({filename: './webpack-stats.json'}),
-    new Dotenv({path: '.env'}),
+    new Dotenv({
+      path: '.env',
+      systemvars: true
+    }),
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify('production')

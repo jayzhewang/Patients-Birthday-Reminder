@@ -8,7 +8,7 @@ const Welcome = () => (
       </div>
       <div>
         <p>How awesome would it be to get an email from your doctor wishing you a Happy Birthday?
-          drreminder is a birthday reminder system to tell patients it’s their birthday, e.g. Happy Birthday from Dr. Smith!</p>
+          drreminder is a birthday reminder system that tells patients it’s their birthday, e.g. Happy Birthday from Dr. Smith!</p>
       </div>
       <div>
         <div className='login-button'>
@@ -18,7 +18,7 @@ const Welcome = () => (
       <div>
         <div id='footnote'>
           <p>
-            Logins required. Sign up for free. drreminder requires patient's basic information (e.g. name, birthday) in order to send out birthday emails.
+            Logins required. Sign up for free. drreminder requires access to patient's basic information (e.g. name, birthday) in order to send out birthday emails.
           </p>
         </div>
       </div>

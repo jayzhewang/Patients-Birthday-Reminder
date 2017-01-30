@@ -8,7 +8,7 @@ const AppRouter = () => (
   <Router history={ browserHistory }>
     <Route path='/' component={ App }>
       <IndexRoute component={ Welcome }/>
-      <Route path='/redirect' component={ RedirectContainer }/>
+      <Route path='/redirect/' component={ RedirectContainer }/>
     </Route>
   </Router>
 );

@@ -6,7 +6,7 @@ import Footer from './footer';
 const App = ({children}) => (
   <div className='app'>
     <Navbar />
-    <Welcome />
+    {children}
     <Footer />
   </div>
 );

@@ -1,4 +1,4 @@
-import { connect } from 'redux';
+import { connect } from 'react-redux';
 import { exchangeTokens } from '../../actions/redirect_actions';
 import Redirect from './redirect';
 

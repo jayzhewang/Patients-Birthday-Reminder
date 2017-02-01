@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Footer = () => (
   <div className='footer'>
-    <div className='footer-logo'>
-      <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1485375457/drchrono_logo_white_tan7je.png' />
+    <div className='footer-info'>
+      <Link to='/' className='footer-logo'>
+        <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1485375457/drchrono_logo_white_tan7je.png' />
+      </Link>
       <div id='copyright'>
         Demo application.
       </div>
